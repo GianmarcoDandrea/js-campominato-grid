@@ -5,7 +5,7 @@
 
     /* header */
     /* debug */
-    --header-heigth:10vh;
+    --header-heigth: 10vh;
 
     /* wrapper */
     /* debug */
@@ -32,7 +32,8 @@ img {
 header {
     background-color: var(--white-bg-color);
     /* debug */
-    height: var(--header-heigth);;
+    height: var(--header-heigth);
+    ;
 }
 
 .logo {
