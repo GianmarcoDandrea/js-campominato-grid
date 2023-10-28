@@ -36,7 +36,7 @@ playBtn.addEventListener("click", function () {
 
     const gridElem = document.getElementById("grid");
 
-    for (let i = 0; i < numbersArray.length; i++) {
+    for(let i = 0; i < numbersArray.length; i++) {
 
         const curNumber = numbersArray[i];
         //Genera lo square con il numero all'interno a la classe in base alla difficoltà 
@@ -58,11 +58,12 @@ playBtn.addEventListener("click", function () {
  * @returns {array}
  */
 function genOrderedNumber(maxNumber) {
-    let arrayOrderedNum = [];
 
-    for (let i = 1; i <= maxNumber; i++) {
+    let arrayOrderedNum = [];
+    for(let i = 1; i <= maxNumber; i++) {
         arrayOrderedNum.push(i);
     }
+    
     return arrayOrderedNum;
 }
 
@@ -73,9 +74,12 @@ function genOrderedNumber(maxNumber) {
  * @returns {array}
  */
 function generateGridSquare(innerNumber, squareWidth) {
+
     const newSquare = document.createElement("div");
+    // aggiunge le classi
     newSquare.classList.add("square");
     newSquare.classList.add(squareWidth);
+    // aggiunge il numero all'intero
     newSquare.innerHTML = innerNumber;
 
     return newSquare;
