@@ -75,7 +75,7 @@ header {
     width: calc(100% / 10);
 }
 
-.lightblue {
+.clicked-bg {
     background-color: lightblue;
 }
 
