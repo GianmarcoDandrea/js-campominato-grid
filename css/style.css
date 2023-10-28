@@ -51,14 +51,19 @@ header {
     height: var(--wrapper-heigth);
 }
 
-
-.square {
-    width: calc(100% / 7);
-    aspect-ratio: 1;
-    border: 1px solid black;
+#grid {
+    width: 40%;
 }
 
-/* .dif-easy {
+.square {
+    aspect-ratio: 1;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dif-easy {
     width: calc(100% / 7);
 }
 
@@ -66,9 +71,13 @@ header {
     width: calc(100% / 9);
 }
 
-.dif-diffcult {
-    width: calc(100% / 9);
-} */
+.dif-hard {
+    width: calc(100% / 10);
+}
+
+.lightblue {
+    background-color: lightblue;
+}
 
 /****************** FOOTER ****************/
 footer {
